@@ -1,4 +1,4 @@
-# ES6+ - Common syntax
+# ES6+ Common syntax
 Below are common syntax of Javascript ES6+, which are usually used in React and Redux project
 
 * `const` and `let`: `const` and `let` make the variable limited in between a code block `{...}`. Use them instead of var, every `var` should replaced by `let`, if constant then should use `const`
