@@ -1,4 +1,4 @@
-# React Begin Guidline
+# 1. React - What and Why
 
 ## What is React?
 
@@ -19,4 +19,6 @@
 * To build the UI with separation of concern and high reusability.
 * Take advantage of its rich ecosystem.
 * To combine it with great architecture (Flux, Readux, ...) and many useful libraries
-* To build mobile app with React Native (learn once write everywhere)
+* Not only to build web app but also mobile app with React Native (learn once write everywhere)
+
+[Next](react2.md)
