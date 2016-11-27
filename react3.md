@@ -51,11 +51,13 @@ var NavigationBar = () => {
 }
 ````
 we can add NavigationBar into App like below
+````
 const App = () => {
     return <div>
         <NavigationBar/>
     </div>
 }
+````
 
 Let's try it in your `my-app/src/App.js`. Below is full source code:
 ````
