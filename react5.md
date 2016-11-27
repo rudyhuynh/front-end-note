@@ -39,11 +39,11 @@ class App extends React.Component{
             userName: 'rudy.huynh'
         }
     }
-    **changeUserName(){**
-        **this.setState({**
-            **userName: 'somebody'**
-        **})**
-    **}**
+    changeUserName(){
+        this.setState({
+            userName: 'somebody'
+        })
+    }
     render(){
         return <div>
             User name: {this.state.userName}
