@@ -45,6 +45,6 @@ class Navigation extends React.Component{
 * Parent can call method from child to get child data but **it is not recommended** ([see more here](https://facebook.github.io/react/docs/refs-and-the-dom.html)).
 * Parent can pass data to children of children or any grandchildren but **it is not recommended** ([see more here](https://facebook.github.io/react/docs/context.html))
 * In JSX, everything in between of {} is Javascript.
-* To comment an element: {/* <SomeElement/> */}
-* Yes, we define a NavigationBar component to create a <NavigationBar/> element
+* To comment an element: {/* <SomeElement /> */}
+* Yes, we define a NavigationBar component to create a <NavigationBar /> element
 
