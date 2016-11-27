@@ -48,3 +48,4 @@ class Navigation extends React.Component{
 * To comment an element: `{/* <SomeElement /> */}`
 * Yes, we define a NavigationBar component to create a `<NavigationBar />` element
 
+[Next](react5.md)
