@@ -19,7 +19,7 @@ Note:
 * `HTML like syntax`, I mean JSX (that's what it's called).
 
 ## 2. React.createClass
-The code in (1.) is equivelent to the below if you don't use [Javascript ES6](es6.md):
+The code in (1.) is equivelent to the below if you don't use [Javascript ES6](es6plus.md):
 ````
 const App = React.createClass({
     render: function(){

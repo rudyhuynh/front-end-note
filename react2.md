@@ -10,6 +10,6 @@ First of all, you need to install NodeJS in your machine.
 That's all!!!
 
 You may now has 'my-app' as your first React application source code. Let start from there from now on.
-You may want to get familiar with [some common Javascript ES6](es6.md) before go to next step.
+You may want to get familiar with [some common Javascript ES6+](es6plus.md) before go to next step.
 
 [Next](react3.md)
