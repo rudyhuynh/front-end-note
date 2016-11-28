@@ -98,7 +98,7 @@ class App extends React.Component{
     state = { someStateValue: 1 } // define object property, supported by create-react-app, not part of ES6
     
     constructor(props){
-        super(props)
+        super(props) // call parent's constructor
 
         this.someValue = 1
     }
