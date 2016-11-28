@@ -59,3 +59,5 @@ Save `App.js` then try to click to `Change user name to somebody` button.
 * To change state value, we use `this.setState` method
 * Change state by directly set state.userName = 'someone' is not recommended and will not make React render our component.
 * Treat the state object like an immutable.
+
+[Next](react6.md)

@@ -6,7 +6,7 @@
 3. [Create a React Component](react3.md)
 4. [Props](react4.md)
 5. [State](react5.md)
-6. Component Life Cycle
+6. [Component Life Cycle](react6.md)
 
 ## Redux
 1. Redux
