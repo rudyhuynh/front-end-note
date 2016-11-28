@@ -18,7 +18,7 @@
 
 * To build the UI with separation of concern and high reusability.
 * Take advantage of its rich ecosystem.
-* To combine it with great architecture (Flux, Readux, ...) and many useful libraries
+* To combine it with great architecture (Flux, Redux, ...) and many useful libraries
 * Not only to build web app but also mobile app with React Native (learn once write everywhere)
 
 [Next](react2.md)
