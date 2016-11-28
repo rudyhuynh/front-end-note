@@ -10,6 +10,7 @@
 
 ## ES6+
 1. [ES6+ Common Syntax](es6plus.md)
+2. [Promise](promise.md)
 
 ## Redux
 1. Redux
