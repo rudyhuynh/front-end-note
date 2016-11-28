@@ -2,7 +2,7 @@
 
 ## Prerequisite
 First of all, you need to install NodeJS in your machine.
-
+ 
 ## Create React App
 
 [Follow instruction (or just tl;dr) here](https://github.com/facebookincubator/create-react-app)

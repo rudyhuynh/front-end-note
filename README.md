@@ -15,4 +15,4 @@
 1. [ES6+ - Common Syntax](es6plus.md)
 
 ## Contact
-Skype: nhut.huynh60
+Skype: nhut.huynh60 

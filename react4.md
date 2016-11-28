@@ -9,7 +9,7 @@ Let see we have App component, we want to pass `userName` value to NavigationBar
 ````
 const App = () => {
 	let userName = 'rudy.huynh'
-    return <div>
+    return <div> 
         <NavigationBar userName={userName}/>
     </div>
 }

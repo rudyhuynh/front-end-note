@@ -36,7 +36,7 @@ The code in (2.) is equivelent to the below :
 var App = () => {
     return <div>
         ...some HTML like syntax here...
-    </div>
+    </div> 
 }
 ````
 

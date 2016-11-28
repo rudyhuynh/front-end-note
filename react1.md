@@ -4,7 +4,7 @@
 
 * A library which helps you to build the View for your Javascript application. Using React, your UI will be rendered by a set of components.
 
-* For example, you can write a Button component to render your button, a NavigationBar component to render your navigation bar, or a HomePage component which contains your Button and NavigationBar.
+* For example, you can write a Button component to render your button, a NavigationBar component to render your navigation bar, or a HomePage component which contains your Button and NavigationBar. 
 
 ![react1-react-component-hierachy <>](https://github.com/rudyhuynh/front-end-note/blob/master/react1-react-component-hierachy.png "React Component Hierachy")
 

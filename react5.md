@@ -8,7 +8,7 @@ Each React Component may (or may not) have a state. Everytime we change componen
 
 //[...]
 
-class App extends React.Component{
+class App extends React.Component{ 
     constructor(props){
         super(props) // call React.Component constructor
         // initial state:

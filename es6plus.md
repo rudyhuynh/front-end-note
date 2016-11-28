@@ -49,7 +49,7 @@ function outerFunction(){
 ````
 // File1.js
 export const HOST = 'www.example.com'
-export const PORT = 3000
+export const PORT = 3000 
 ````
 ````
 // File2.js
