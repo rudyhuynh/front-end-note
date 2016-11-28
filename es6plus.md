@@ -70,19 +70,21 @@ import singleton from './File1.js'
 console.log(singleton) // {x: 1, y: 2}
 ````
 
-* Destructor: To quickly get object properties or items in array
+* Destructor: To quickly get object properties or array items
 ````
 // In ES5:
 var obj = {x: 1, y: 2}
 var x = obj.x
+var y = obj.y
 
 console.log(x) // 1
 
 // In ES6:
 let obj = {x: 1, y: 2}
-let {x} = obj
+let {x, y} = obj
 
 console.log(x) // 1
+console.log(y) // 2
 ````
 
 * `class`: To create Class
