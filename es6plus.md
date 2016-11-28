@@ -7,7 +7,7 @@ const ONE = 1
 
 let x = 1
 
-for (let i in someArray){ 
+for (let item of anArray){ 
     //... 
 }
 
