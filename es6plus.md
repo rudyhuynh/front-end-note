@@ -71,7 +71,7 @@ import singleton from './File1.js'
 console.log(singleton) // {x: 1, y: 2}
 ````
 
-* Destructor: To quickly get object properties or array items
+* Destructuring: To quickly get object properties or array items
 ````
 // In ES5:
 var obj = {x: 1, y: 2}
@@ -127,14 +127,14 @@ var array2 = array1.concat([4, 5])
 console.log(array2) // [1,2,3, 4, 5]
 
 // In ES6: 
-const array1 = [1, 2, 3]
+let array1 = [1, 2, 3]
 var array2 = [...array1, 4, 5]
 
 console.log(array2) // [1, 2, 3, 4, 5]
 
 // Could also merge properties of object into a new object (supported by create-react-app, not part of ES6):
-const object1 = {x: 1, y: 2}
-const object2 = {...object1, z: 3}
+let object1 = {x: 1, y: 2}
+let object2 = {...object1, z: 3}
 
 console.log(object2) // {x: 1, y: 2, z: 3}
 ````
