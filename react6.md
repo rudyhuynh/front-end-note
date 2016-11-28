@@ -14,6 +14,7 @@
 
 ### Notes:
 * If you want to define the above methods, you have to use `class` to define a component.
+* Not all of them will be called everytime.
 * [See React doc for more details](https://facebook.github.io/react/docs/react-component.html) or maybe keep reading below.
 
 ## You will usually use:

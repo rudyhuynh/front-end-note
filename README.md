@@ -8,11 +8,11 @@
 5. [State](react5.md)
 6. [Component Life Cycle](react6.md)
 
+## ES6+
+1. [ES6+ Common Syntax](es6plus.md)
+
 ## Redux
 1. Redux
-
-## ES6+
-1. [ES6+ - Common Syntax](es6plus.md)
 
 ## Contact
 Skype: nhut.huynh60 
