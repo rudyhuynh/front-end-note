@@ -62,6 +62,7 @@ console.log(PORT) // 3000
 ````
 // File1.js
 const singleton = {x: 1, y: 2}
+export default singleton
 ````
 ````
 // File2.js
