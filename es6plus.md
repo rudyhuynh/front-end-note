@@ -118,7 +118,7 @@ class App extends React.Component{
 }
 ````
 
-* Spread Operator: To quickly merge an array into a new array
+* Spread Operator: To quickly merge one or many array into a new array
 ````
 // In ES5:
 var array1 = [1, 2, 3]
