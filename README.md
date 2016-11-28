@@ -6,10 +6,10 @@
 3. [Create a React Component](react3.md)
 4. [Props](react4.md)
 5. [State](react5.md)
-6. [Component Life Cycle](react6.md)
+6. Component Life Cycle
 
 ## Redux
-1. [Redux](redux1.md)
+1. Redux
 
 ## ES6+
 1. [ES6+ - Common Syntax](es6plus.md)
