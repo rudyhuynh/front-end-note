@@ -89,6 +89,20 @@ let {x, y} = obj
 
 console.log(x) // 1
 console.log(y) // 2
+
+// Array
+let array = [1, 2]
+let [x, y] = array
+
+console.log(x) // 1
+console.log(y) // 2
+
+// Quickly get properties in function's parameters
+function someFunction({x, y}){
+    console.log(x, y)
+}
+
+someFunction({x: 1, y: 2}) // 1, 2
 ````
 
 * `class`: To create Class
