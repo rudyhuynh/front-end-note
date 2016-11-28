@@ -79,6 +79,7 @@ var x = obj.x
 var y = obj.y
 
 console.log(x) // 1
+console.log(y) // 2
 
 // In ES6:
 let obj = {x: 1, y: 2}
