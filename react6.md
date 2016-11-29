@@ -23,7 +23,7 @@
 * `componentDidMount()` to call fetch data API for your component
 
 ## Examples:
-````
+````javascript
 class App extends React.Component{
     constructor(props){
         super(props)
