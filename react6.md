@@ -31,7 +31,7 @@ class App extends React.Component{
             userName: ''
         }
     }
-    ``componentDidMount``(){
+    componentDidMount(){
 		fetch('http://my.api.com/users').then((data) => {
 			this.setState({
 				userName: data.userName
