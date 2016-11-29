@@ -18,7 +18,7 @@
 * [See React doc for more details](https://facebook.github.io/react/docs/react-component.html) or maybe keep reading below.
 
 ## You will usually use:
-* `render()` (always) which return JSX
+* `render()` (always) which returns JSX
 * `constructor(props)` to define initial state of the component
 * `componentDidMount()` to call fetch data API for your component
 
