@@ -2,15 +2,15 @@
 
 ## If you defined below methods to a component, their will be call in order (you may forget if you don't need):
 
-* `constructor(props)`
-* `componentWillMount()`
-* `componentWillReceiveProps(nextProps)`
-* `shouldComponentUpdate(nextProps, nextState)`
-* `componentWillUpdate()`
-* `render()`
-* `componentDidUpdate()`
-* `componentDidMount()`
-* `componentWillUnmount()`
+1. `constructor(props)`
+2. `componentWillMount()`
+3. `componentWillReceiveProps(nextProps)`
+4. `shouldComponentUpdate(nextProps, nextState)`
+5. `componentWillUpdate()`
+6. `render()`
+7. `componentDidUpdate()`
+8. `componentDidMount()`
+9. `componentWillUnmount()`
 
 ### Notes:
 * If you want to define the above methods, you have to use `class` to define a component.
