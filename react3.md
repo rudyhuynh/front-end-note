@@ -21,7 +21,7 @@ Note:
 ## 2. React.createClass
 The code in (1.) is equivelent to the below if you don't use [Javascript ES6](es6plus.md):
 ````javascript
-const App = React.createClass({
+var App = React.createClass({
     render: function(){
         return <div>
             ...some HTML like syntax here...
