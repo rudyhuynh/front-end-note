@@ -46,7 +46,7 @@ function getProducts(){
                 resolve(json)
             })
         }, error => {
-            const notOriginal = doSomethingDifference(error)
+            const notOriginal = doSomething(error)
             reject(notOriginal)
         })
     })
