@@ -3,7 +3,7 @@
 Each React Component may (or may not) have a state. Everytime we change component's state, render() method will be called to rerender the component.
 
 ## Step 1: Prepare a component with initial state
-````
+````javascript
 // src/App.js
 
 //[...]
@@ -29,7 +29,7 @@ export default App
 Save `App.js` and see the page after refresh.
 
 ## Step 3: Let's change state.userName to somebody
-````
+````javascript
 // src/App.js
 class App extends React.Component{
     constructor(props){

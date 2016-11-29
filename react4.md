@@ -6,7 +6,7 @@
 
 ## Pass data to child's `props` from parent
 Let see we have App component, we want to pass `userName` value to NavigationBar component
-````
+````javascript
 const App = () => {
 	let userName = 'rudy.huynh'
     return <div> 
@@ -17,7 +17,7 @@ const App = () => {
 
 ## Take `props` data in chid
 In NavigationBar component, we can take the value of userName like below:
-````
+````javascript
 var NavigationBar = (props) => {
     return <div>
     	User name: {props.userName}
@@ -27,7 +27,7 @@ var NavigationBar = (props) => {
 }
 ````
 Or if NavigationBar is defined by using class
-````
+````javascript
 class Navigation extends React.Component{
 	render(){
 		return <div>

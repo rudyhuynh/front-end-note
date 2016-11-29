@@ -4,7 +4,7 @@
 
 There are 3 ways to create a React component:
 ## 1. Create a class (Recomended way, see `my-app/src/App.js`)
-````
+````javascript
 class App extends React.Component{
     render(){
         return <div className="App">
@@ -20,7 +20,7 @@ Note:
 
 ## 2. React.createClass
 The code in (1.) is equivelent to the below if you don't use [Javascript ES6](es6plus.md):
-````
+````javascript
 const App = React.createClass({
     render: function(){
         return <div>
@@ -32,7 +32,7 @@ const App = React.createClass({
 
 ## 3. Create a function (Also recommended, for shorten purpose...)
 The code in (2.) is equivelent to the below :
-````
+````javascript
 var App = () => {
     return <div>
         ...some HTML like syntax here...
@@ -42,7 +42,7 @@ var App = () => {
 
 ## Add a component to another component as a child
 For example, we have a NavigationBar component like below:
-````
+````javascript
 var NavigationBar = () => {
     return <div>
         <button>Button 1</button>
@@ -51,7 +51,7 @@ var NavigationBar = () => {
 }
 ````
 we can add NavigationBar into App like below
-````
+````javascript
 const App = () => {
     return <div>
         <NavigationBar/>
@@ -60,7 +60,7 @@ const App = () => {
 ````
 
 Let's try it in your `my-app/src/App.js`. Below is full source code:
-````
+````javascript
 // src/App.js
 import React, { Component } from 'react';
 import logo from './logo.svg';
