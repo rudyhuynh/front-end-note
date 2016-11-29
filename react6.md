@@ -46,7 +46,7 @@ class App extends React.Component{
 }
 ````
 
-## Simplest life cycle
+## The life cycle you usually care
 * First the component will be initiated (`constructor()` runs).
 * Then it will be rendered (`render()` runs).
 * After it was added to the DOM, `componentDidMount()` will run only once.
