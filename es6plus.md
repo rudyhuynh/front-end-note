@@ -140,7 +140,7 @@ class App extends React.Component{
 var array1 = [1, 2, 3]
 var array2 = array1.concat([4, 5])
 
-console.log(array2) // [1,2,3, 4, 5]
+console.log(array2) // [1, 2, 3, 4, 5]
 
 // In ES6: 
 let array1 = [1, 2, 3]
