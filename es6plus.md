@@ -2,7 +2,7 @@
 Below are common syntax of Javascript ES6+, which are usually used in React and Redux project
 
 * `const` and `let`: `const` and `let` make the variable limited in between a code block `{...}`. Use them instead of var, every `var` should replaced by `let`, if constant then should use `const`
-````
+````javascript
 const ONE = 1
 
 let x = 1
@@ -26,7 +26,7 @@ switch (type){
 ````
 
 * `() => { ... }`: Like lambda expression, to quickly define a function without create new scope.
-````
+````javascript
 // In ES5:
 function outerFunction(){
     
@@ -48,12 +48,12 @@ function outerFunction(){
 ````
 
 * `import/export`: 
-````
+````javascript
 // File1.js
 export const HOST = 'www.example.com'
 export const PORT = 3000 
 ````
-````
+````javascript
 // File2.js
 import {HOST, PORT} from './File1.js'
 
@@ -61,12 +61,12 @@ console.log(HOST) // 'www.example.com'
 console.log(PORT) // 3000
 ````
 
-````
+````javascript
 // File1.js
 const singleton = {x: 1, y: 2}
 export default singleton
 ````
-````
+````javascript
 // File2.js
 import singleton from './File1.js'
 
@@ -74,7 +74,7 @@ console.log(singleton) // {x: 1, y: 2}
 ````
 
 * Destructuring: To quickly get object properties or array items
-````
+````javascript
 // In ES5:
 var obj = {x: 1, y: 2}
 var x = obj.x
@@ -106,7 +106,7 @@ someFunction({x: 1, y: 2}) // 1, 2
 ````
 
 * `class`: To create Class
-````
+````javascript
 class App extends React.Component{
 
     static propTypes = {}; // define static property, supported by create-react-app, not part of ES6
@@ -135,7 +135,7 @@ class App extends React.Component{
 ````
 
 * Spread Operator: To quickly merge one or many array into a new array
-````
+````javascript
 // In ES5:
 var array1 = [1, 2, 3]
 var array2 = array1.concat([4, 5])

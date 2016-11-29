@@ -14,7 +14,7 @@ fetch('http://my.api.com/data').then((data) => {
 * We just defined two callbacks (resolve and reject) using `promise.then()` method.
 
 # Chaining promise
-````
+````javascript
 fetch('https://my.api.com/data').then(data => {
     return data.json()
 }).then(jsonData => {
@@ -25,7 +25,7 @@ fetch('https://my.api.com/data').then(data => {
 * This will make our code easier to read (if we careful) than just pass in callback many times.
 
 # Using `promise.catch(...)`
-````
+````javascript
 fetch('http://my.api.com/data').then(data => {
     return data.json()
 }).then(jsonData => {
@@ -38,7 +38,7 @@ fetch('http://my.api.com/data').then(data => {
 * Be careful when use `promise.catch(...)` because it can swallow helpful exception, or maybe don't use it at all, instead, use the second parameter of `then()` method to handle fail case.
 
 # Create a promise ourself
-````
+````javascript
 function getProducts(){
     return new Promise((reject, resolve) => {
         fetch('https://some.api.com/products').then(data => {
