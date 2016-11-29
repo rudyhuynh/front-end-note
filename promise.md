@@ -4,7 +4,7 @@
 * Many API in Javascript (example: [fetch API](https://github.com/github/fetch)) return a promise.
 
 # First example
-````
+````javascript
 fetch('http://my.api.com/data').then((data) => {
     //handle when request success
 }, (error) => {
