@@ -49,7 +49,7 @@ class App extends React.Component{
 ## The life cycle you usually care
 * First the component will be initiated (`constructor()` runs).
 * Then it will be rendered (`render()` runs).
-* After it was added to the DOM, `componentDidMount()` will run only once.
-* Everytime component receives new `prop` or `state` change, the component will be re-rendered (`render()` runs again) then it will be updated (if nessessary) to the DOM.
+* Then it will be added to the DOM, after that `componentDidMount()` will run only once.
+* Everytime component receives new `props` or `state` change, the component will be re-rendered (`render()` runs again) then it will be updated (if nessessary) to the DOM.
 
 [Index](README.md)
