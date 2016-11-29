@@ -32,7 +32,7 @@ class App extends React.Component{
         }
     }
     componentDidMount(){
-		fetch('http://my.api.com/users').then((data) => {
+		fetch('http://my.api.com/account').then((data) => {
 			this.setState({
 				userName: data.userName
 			})
