@@ -3,7 +3,7 @@
 * A promise is an object for us to define some callbacks to resolve (if success) or reject (if fail).
 * Many API in Javascript (example: [fetch API](https://github.com/github/fetch)) return a promise.
 
-# First example
+## First example
 ````javascript
 fetch('http://my.api.com/data').then((data) => {
     //handle when request success
@@ -13,7 +13,7 @@ fetch('http://my.api.com/data').then((data) => {
 ````
 * We just defined two callbacks (resolve and reject) using `promise.then()` method.
 
-# Chaining promise
+## Chaining promise
 ````javascript
 fetch('https://my.api.com/data').then(data => {
     return data.json()
@@ -24,7 +24,7 @@ fetch('https://my.api.com/data').then(data => {
 * `then()` method of the promise returns a promise, so we can `then()` and `then()`...
 * This will make our code easier to read (if we careful) than just pass in callback many times.
 
-# Using `promise.catch(...)`
+## Using `promise.catch(...)`
 ````javascript
 fetch('http://my.api.com/data').then(data => {
     return data.json()
@@ -37,7 +37,7 @@ fetch('http://my.api.com/data').then(data => {
 * Use `promise.catch(...)` to handle any exception inside the promise chain.
 * Be careful when use `promise.catch(...)` because it can swallow helpful exception, or maybe don't use it at all, instead, use the second parameter of `then()` method to handle fail case.
 
-# Create a promise ourself
+## Create a promise ourself
 ````javascript
 function getProducts(){
     return new Promise((reject, resolve) => {
