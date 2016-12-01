@@ -1,6 +1,6 @@
 # What is `this` in Javascript?
 
-Below explain 'this' in Javascript without strict-mode.
+Below explain `this` in Javascript without strict-mode.
 
 ````javascript
 function revealThis(){
