@@ -31,13 +31,13 @@ thisIsY() // will log 'Object {name: "y"}'
 
 ## In React
 ````javascript
-// Below won't work:
+// Click on 'Click Me' button below won't work:
 class App extends React.Component{
     onClick(){
         this.setState({user: 'somebody'}) // Will cause error about 'setState' is not a function...
     }
     render(){
-        return <button onClick={this.onClick}></button>
+        return <button onClick={this.onClick}>Click Me</button>
     }
 }
 
@@ -47,7 +47,7 @@ class App extends React.Component{
         this.setState({user: 'somebody'})
     }
     render(){
-        return <button onClick={() => this.onClick()}></button> // Take advantage of ES6 '() => {...}'
+        return <button onClick={() => this.onClick()}>Click Me</button> // Take advantage of ES6 '() => {...}'
     }
 }
 
@@ -61,7 +61,7 @@ class App extends React.Component{
         this.setState({user: 'somebody'})
     }
     render(){
-        return <button onClick={this.onClick}></button>
+        return <button onClick={this.onClick}>Click Me</button>
     }
 }
 ````
