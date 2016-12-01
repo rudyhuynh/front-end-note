@@ -1,6 +1,8 @@
 ## React State
 
-Each React Component may (or may not) have a state. Everytime we change component's state, render() method will be called to rerender the component.
+* Each React Component may (or may not) have a state. 
+* State is the way for our components "react" to the data changes.
+* Everytime we change component's state, render() method will be called to rerender the component.
 
 ## Step 1: Prepare a component with initial state
 ````javascript
