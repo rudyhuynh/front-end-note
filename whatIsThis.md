@@ -51,7 +51,7 @@ class App extends React.Component{
     }
 }
 
-// Could also fixed by this
+// Could also fixed by below
 class App extends React.Component{
     constructor(props){
         super(props)
