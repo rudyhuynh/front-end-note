@@ -14,6 +14,3 @@
 
 ## Redux
 1. Redux
-
-## Contact
-Skype: nhut.huynh60 
