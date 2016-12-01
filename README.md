@@ -8,9 +8,10 @@
 5. [State](react5.md)
 6. [Component Life Cycle](react6.md)
 
-## ES6+
+## Javascript
 1. [ES6+ Common Syntax](es6plus.md)
 2. [Promise](promise.md)
+3. [What is 'this' ?](whatIsThis.md)
 
 ## Redux
 1. Redux
