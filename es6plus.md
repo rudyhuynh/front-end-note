@@ -155,6 +155,7 @@ let object2 = {...object1, z: 3}
 console.log(object2) // {x: 1, y: 2, z: 3}
 ````
 
+[Index](README.md)
 
 
 
