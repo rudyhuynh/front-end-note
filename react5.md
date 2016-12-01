@@ -28,7 +28,7 @@ export default App
 ````
 Save `App.js` and see the page after refresh.
 
-## Step 3: Let's change state.userName to somebody
+## Step 2: Let's change state.userName to somebody
 ````javascript
 // src/App.js
 class App extends React.Component{
