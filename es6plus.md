@@ -55,7 +55,7 @@ export const PORT = 3000
 ````
 ````javascript
 // File2.js
-import {HOST, PORT} from './File1.js'
+import {HOST, PORT} from './File1'
 
 console.log(HOST) // 'www.example.com'
 console.log(PORT) // 3000
@@ -68,9 +68,17 @@ export default singleton
 ````
 ````javascript
 // File2.js
-import singleton from './File1.js'
+import singleton from './File1'
 
 console.log(singleton) // {x: 1, y: 2}
+````
+
+````javascript
+// import something from a library,
+// to make below import works you need to run "npm install react --save" before run application
+import React from 'react'
+
+// ...
 ````
 
 * Destructuring: To quickly get object properties or array items
@@ -153,6 +161,16 @@ let object1 = {x: 1, y: 2}
 let object2 = {...object1, z: 3}
 
 console.log(object2) // {x: 1, y: 2, z: 3}
+````
+
+* Default parameter value
+````javascript
+function doSomething(x = 1){
+    console.log(x)
+}
+
+doSomething() // log 1
+doSomething(2) // log 2
 ````
 
 [Index](README.md)

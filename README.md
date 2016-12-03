@@ -1,7 +1,7 @@
 # React/Redux - Shortest beginning guideline
 
 ## React
-1. [React - What and Why](react1.md)
+1. [React - What and why](react1.md)
 2. [Create React App](react2.md)
 3. [Create a React Component](react3.md)
 4. [Props](react4.md)
@@ -14,4 +14,10 @@
 3. [What is 'this' ?](whatIsThis.md)
 
 ## Redux
-1. Redux
+Read below when you already knew about React and [Create React App](react2.md).
+1. [Redux - Shortest introduction](redux1.md)
+2. [Action](redux2.md)
+3. [Reducer](redux3.md)
+4. [Store](redux4.md)
+5. [Redux in action](redux5.md)
+6. ...
