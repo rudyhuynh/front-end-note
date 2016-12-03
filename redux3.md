@@ -4,7 +4,7 @@
 // src/redux/usersReducer.js
 import {ADD_USER} from './actions'
 
-export default function users(state = {} /* a bit weird but important */, action){
+export default function users(state = [] /* a bit weird but important */, action){
     switch(action.type){
         case ADD_USER:
             return [...state, action.user]
@@ -19,8 +19,8 @@ export default function users(state = {} /* a bit weird but important */, action
 ## Notes
 * Reducer signature: (state, action) => nextState
 * Reducer must be a pure function, which means:
-  * No input mutations (Ex: `state.push(action.user)` or `state.someProp = someValue` is forbidden)
-  * No side affect (No async call, no access other resource like local storage or something)
+  * No input mutations (Example: `state.push(action.user)` or `state.someProp = someValue` is forbidden)
+  * No side affect (No async call, no access other resource like local storage, ...)
   * Output must be predictable (Y = ⨍(X) : ∀ X → ∃! Y)
 * Create many reducers for many entities in your app. Example: create `users()` reducer to handle user-related actions, create `products()` reducer to handle product-related actions.
 * Next step will help you to combine all reducers and register them.

@@ -23,7 +23,7 @@ export default App
 
 ````
 
-## Step 1: Provide the store to React application:
+## Step 1: Provide the `store` to React application:
 ````javascript
 // src/index.js
 
@@ -55,7 +55,7 @@ export default connect(...)(App)
 ````
 
 ## Step 3: Define what to `connect()`
-* What to get from the global state in the store
+* What to get from the global state
 ````javascript
 // src/App.js
 

@@ -11,7 +11,7 @@ export function addUser(user){
     }
 }
 ````
-* What is returned by `addUser()` is an action
+* What returned by `addUser()` is an action
 * `addTodo()` is called action creator, we'll call it to get an action.
 * Each action must has a `type`, we'll need this `type` later, that why we `export` them.
 

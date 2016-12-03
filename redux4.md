@@ -1,7 +1,7 @@
 # Store
 * A store is the place to store our global state
 * Just like the state of React component, treat data in the store like immutable object.
-* There's only one single store in Redux application.
+* There's only one single store in Redux.
 
 ## How to create a store:
 ### Step 1: Init our global state
@@ -52,7 +52,7 @@ const combinedReducers = combineReducers({
 export default store = createStore(initialState, combinedReducers)
 ````
 
-[Next](redux5)
+[Next](redux5.md)
 
 
 
