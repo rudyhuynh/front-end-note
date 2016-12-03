@@ -15,6 +15,7 @@
 
 ## Redux
 Read below when you already knew about React and [Create React App](react2.md).
+
 1. [Redux - Shortest introduction](redux1.md)
 2. [Action](redux2.md)
 3. [Reducer](redux3.md)
