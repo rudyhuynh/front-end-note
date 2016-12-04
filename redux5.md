@@ -34,7 +34,8 @@ import store from './redux/store'
 ReactDOM.render(
     <Provider store={store}>
         <App/>
-    </Provider>
+    </Provider>,
+    document.getElementById('root')
 )
 ````
 * This will make App component or any child, any grandchild of App can be connected to Redux.
