@@ -16,7 +16,7 @@ export function addUser(user){
 * Each action must has a `type`, we'll need this `type` later, that why we `export` them.
 
 ## What is this mean?
-* Action is the cause to make our state change, anytime you want to change our state, first create an action.
+* Action is the cause to make the global state change, anytime you want to change the global state, first create an action.
 
 [Next](redux3.md)
 
