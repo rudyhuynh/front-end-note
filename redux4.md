@@ -49,7 +49,7 @@ const combinedReducers = combineReducers({
 	products: productsReducer // if we had one
 })
 
-export default store = createStore(initialState, combinedReducers)
+export default createStore(combinedReducers, initialState)
 ````
 
 [Next](redux5.md)

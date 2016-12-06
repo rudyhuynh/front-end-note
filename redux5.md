@@ -155,8 +155,12 @@ export default connect(mapStateToProps)(App)
 
 ````
 
-## Notes
-* Before running your app with `npm start`, first install `redux` and `react-redux` by running: `npm install redux react-redux --save`
+## To run the project:
+* First install `redux` and `react-redux` by running: `npm install redux react-redux --save`
+* Run `npm start`
+
+## Full source
+* [Here](redux-demo)
 
 [Index](README.md)
 
