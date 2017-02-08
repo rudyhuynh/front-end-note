@@ -15,8 +15,8 @@ fetch('http://my.api.com/data').then((data) => {
 
 ## Chaining promise
 ````javascript
-fetch('https://my.api.com/data').then(data => {
-    return data.json()
+fetch('https://my.api.com/data').then(response => {
+    return response.json()
 }).then(jsonData => {
     console.log(jsonData)
 })
@@ -26,8 +26,8 @@ fetch('https://my.api.com/data').then(data => {
 
 ## Using `promise.catch(...)`
 ````javascript
-fetch('http://my.api.com/data').then(data => {
-    return data.json()
+fetch('http://my.api.com/data').then(response => {
+    return response.json()
 }).then(jsonData => {
     console.log(jsonData)
 }).catch(err => {
