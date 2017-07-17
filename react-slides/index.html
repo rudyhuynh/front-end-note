@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Introduction to React, Redux</title>
+        <title>Introduction to React</title>
 
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/beige.css">
@@ -26,8 +26,8 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h2>Introduction to <br/>React &amp; Redux</h2>
-                    <div><small>Instead of see this slide, you can alos see <a href="https://github.com/rudyhuynh/front-end-note/">my notes here</a></small></div>
+                    <h2>Introduction to React</h2>
+                    <div><small>Instead of see this slide, you can also see <a href="https://github.com/rudyhuynh/front-end-note/">my notes here</a></small></div>
                 </section>
                 <section>
                     <section>
@@ -72,6 +72,40 @@
         |_________________________________________|
     
                     </pre>
+                </section>
+                <section>
+                    <div>Component Life Cycles:</div>
+                    <ul>
+                        <li>Mount (&lt;TodoList/&gt; --> &lt;ul&gt;...&lt;/ul&lt;) </li>
+                        <li>Update (everytime this.setState())</li>
+                        <li>Unmount (Removed from DOM)</li>
+                    </ul>
+                </section>
+                <section>
+                    Immutable:
+                    <pre><code>
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+//add new:
+const nextArr = [...arr, 4]
+
+//edit nrd element:
+const nextArr = [arr.slice(0, n), x, arr.slice(n+1, arr.length)]
+
+//remove nrd element:
+const nextArr = [arr.slice(0, n), arr.slice(n+1, arr.length)]
+                    </code></pre>
+                </section>
+                <section>
+                    <div>Pure function:</div>
+                    <ul>
+                        <li>$ Y = F(X): \forall X, \exists! Y  $</li>
+                        <li>No side effect</li>
+                        <ul style="list-style-type: none">
+                            <li>$ \Rightarrow $Relies on no external mutable state.</li>
+                            <li>$ \Rightarrow $Input is immutable</li>
+                        </ul>
+                    </ul>
                 </section>
             </div>
         </div>
