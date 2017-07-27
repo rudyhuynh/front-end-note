@@ -21,4 +21,4 @@ Read below when you already knew about React and [Create React App](react2.md).
 3. [Reducer](redux3.md)
 4. [Store](redux4.md)
 5. [Redux in action](redux5.md)
-6. ...
+6. [Middleware: redux-thunk](redux6.md)
