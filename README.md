@@ -22,3 +22,4 @@ Read below when you already knew about React and [Create React App](react2.md).
 4. [Store](redux4.md)
 5. [Redux in action](redux5.md)
 6. [Middleware: redux-thunk](redux6.md)
+7. [You might not need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)
