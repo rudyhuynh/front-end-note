@@ -10,7 +10,7 @@
 `npm install --save redux-thunk`
 
 ## Setup store
-```
+```javascript
 //store.js
 //import [...]
 import thunk from 'redux-thunk'
@@ -20,7 +20,7 @@ export default createStore(todoReducer, applyMiddleware(...middlewares));
 
 ```
 ## Write an async action
-```
+```javascript
 //action.js
 export const REQUEST_DATA_SUCCESS = "REQUEST_DATA_SUCCESS"
 export const REQUEST_DATA_FAIL = "REQUEST_DATA_FAIL"
@@ -48,7 +48,7 @@ export function requestData(){
 ```
 
 ## Create reducer for REQUEST_DATA_SUCCESS and REQUEST_DATA_FAIL
-```
+```javascript
 // someReducer.js
 export default function someReducer(state = {}, action){
   switch(action.type){
@@ -68,7 +68,7 @@ export default function someReducer(state = {}, action){
 ```
 
 ## Use async action
-```
+```javascript
 //App.js or some component that need to request data from server API
 //import ...
 import {requestData} from './action.js'
