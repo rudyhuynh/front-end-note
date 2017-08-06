@@ -12,10 +12,10 @@ let cartItems = [
     {quantity: 13, unitPrice: 3}
 ]
 
-//Below are two way to calculate total prize of cart items:
+//Below are two ways to calculate total price of cart items:
         
 //using for loop - the old way
-function getTotalPrize(cartItems = []){
+function getTotalPrice(cartItems = []){
   let result = 0
   for (var i = 0; i < cartItems.length; i++){
     let item = cartItems[i]
@@ -28,7 +28,7 @@ function getTotalPrize(cartItems = []){
 }
 
 //using filter(), map(), reduce() - the prefer way
-function getTotalPrize(cartItems = []){
+function getTotalPrice(cartItems = []){
   return cartItems
     .filter(item => typeof item.unitPrice === 'number')
     .map(item => item.quantity * item.unitPrice)
