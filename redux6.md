@@ -55,14 +55,21 @@ export function requestData(){
 // someReducer.js
 export default function someReducer(state = {}, action){
   switch(action.type){
+    case REQUEST_DATA:
+      return {
+        ...state,
+        status: 'requesting'
+      }
     case REQUEST_DATA_SUCCESS:
       return {
       	...state,
+        status: 'success',
         data: action.json
       }
     case REQUEST_DATA_FAIL:
       return {
         ...state,
+        status: fail,
         error: action.error
       }
     default: return state
