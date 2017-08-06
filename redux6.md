@@ -96,3 +96,6 @@ class App extends React.Component{
 }
 export default connect(...)(App)
 ```
+
+
+[Index](README.md)
