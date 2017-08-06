@@ -50,7 +50,7 @@ export function requestData(){
 }
 ```
 
-## Create reducer for REQUEST_DATA_SUCCESS and REQUEST_DATA_FAIL
+## Create reducer
 ```javascript
 // someReducer.js
 export default function someReducer(state = {}, action){
