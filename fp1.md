@@ -1,4 +1,4 @@
-#What we actually do when functional programming?
+# What we actually do when functional programming?
 
 * In short, we use function as basic block of our code, such as:
   * Use `filter()`, `map()`, `reduce()`, ... instead of for loop.
