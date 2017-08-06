@@ -22,22 +22,25 @@ export default createStore(todoReducer, applyMiddleware(...middlewares));
 ## Write an async action
 ```javascript
 //action.js
+export const REQUEST_DATA = "REQUEST_DATA"
 export const REQUEST_DATA_SUCCESS = "REQUEST_DATA_SUCCESS"
 export const REQUEST_DATA_FAIL = "REQUEST_DATA_FAIL"
 export function requestData(){
   //our action creator returns a function instead of action object
   //because we need to do things asyncronously
   return (dispatch) => {
+    //here we use 'dispatch' to, well, dispatch an action any time needed.
+    dispatch({
+      type: REQUEST_DATA
+    })
     return fetch('http://www.example.com/data')
     .then(resp => resp.json())
     .then(json => {
-      //this is when we actually dispatch an action object
       dispatch({
         type: REQUEST_DATA_SUCCESS,
         json
       })
     }, () => {
-      //dispatch an action when request fail
       dispatch({
         type: REQUEST_DATA_FAIL,
         error: 'Some error message'
