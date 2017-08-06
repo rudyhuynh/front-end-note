@@ -40,7 +40,7 @@ function getTotalPrice(cartItems = []){
   * Immutable object
   * Pure function
   * Currying
-* The benefits is to make the code declarative, easier to read and test.
+* The benefits is to make the code declarative, easier to read and unit test.
 
 (To be continued)
 
