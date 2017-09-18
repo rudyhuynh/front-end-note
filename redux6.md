@@ -10,7 +10,7 @@
 `npm install --save redux-thunk`
 
 ## Setup store
-```
+```javascript
 //store.js
 //import [...]
 import thunk from 'redux-thunk'
@@ -20,24 +20,27 @@ export default createStore(todoReducer, applyMiddleware(...middlewares));
 
 ```
 ## Write an async action
-```
+```javascript
 //action.js
+export const REQUEST_DATA = "REQUEST_DATA"
 export const REQUEST_DATA_SUCCESS = "REQUEST_DATA_SUCCESS"
 export const REQUEST_DATA_FAIL = "REQUEST_DATA_FAIL"
 export function requestData(){
   //our action creator returns a function instead of action object
   //because we need to do things asyncronously
   return (dispatch) => {
+    //here we use 'dispatch' to, well, dispatch an action any time needed.
+    dispatch({
+      type: REQUEST_DATA
+    })
     return fetch('http://www.example.com/data')
     .then(resp => resp.json())
     .then(json => {
-      //this is when we actually dispatch an action object
       dispatch({
         type: REQUEST_DATA_SUCCESS,
         json
       })
     }, () => {
-      //dispatch an action when request fail
       dispatch({
         type: REQUEST_DATA_FAIL,
         error: 'Some error message'
@@ -47,19 +50,26 @@ export function requestData(){
 }
 ```
 
-## Create reducer for REQUEST_DATA_SUCCESS and REQUEST_DATA_FAIL
-```
+## Create reducer
+```javascript
 // someReducer.js
 export default function someReducer(state = {}, action){
   switch(action.type){
+    case REQUEST_DATA:
+      return {
+        ...state,
+        status: 'requesting'
+      }
     case REQUEST_DATA_SUCCESS:
       return {
       	...state,
+        status: 'success',
         data: action.json
       }
     case REQUEST_DATA_FAIL:
       return {
         ...state,
+        status: fail,
         error: action.error
       }
     default: return state
@@ -68,7 +78,7 @@ export default function someReducer(state = {}, action){
 ```
 
 ## Use async action
-```
+```javascript
 //App.js or some component that need to request data from server API
 //import ...
 import {requestData} from './action.js'
@@ -86,3 +96,6 @@ class App extends React.Component{
 }
 export default connect(...)(App)
 ```
+
+
+[Index](README.md)
