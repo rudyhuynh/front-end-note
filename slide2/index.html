@@ -38,33 +38,65 @@
             </section>
             <section>React Devtools, Redux Remote Devtools</section>
             <section>
-                Immutable:
+                Immutable - Add:
                 <pre><code>
 const state = [
   {value: 1, name: 'A'}, 
   {value: 2, name: 'B'}
 ]
 
-//add new:
+// NOT IMMUTABLE
+state.push({value: 3, name: 'C'})
+
+// IMMUTABLE
 const nextState = [
   ...state, 
   {value: 3, name: 'C'}
 ]
+                </code></pre>
+            </section>
+            <section>
+                Edit
+                <pre><code>
+// NOT IMMUTABLE
+state[i].name = 'New edited name'
 
-//edit element at i:
+// IMMUTABLE
 const nextState = [
   ...state.slice(0, i), 
   {
     ...state[i],
     name: 'New edited name'
   }, 
-  ...state.slice(i+1)]
+  ...state.slice(i+1)
+]
+</code></pre>
+            </section>
+            <section>
+                Remove
+                <pre><code>
+// NOT IMMUTABLE
+state.splice(i, 1)
 
-//remove element at i:
+// IMMUTABLE
 const nextState = [
   ...state.slice(0, i), 
   ...state.slice(i+1)
 ]
+</code></pre>
+            </section>
+            <section>
+                Sort
+                <pre><code>
+import sortBy from 'lodash.sortby'
+
+// NOT IMMUTABLE
+state.sort((item1, item2) => item1.value - item2.value)
+
+// IMMUTABLE
+const nextState = state.slice(0).sort((item1, item2) => item1.value - item2.value)
+const nextState = state.map(...).sort(...)
+const nextState = sortBy(state, ['value'])
                     </code></pre>
             </section>
             <section>
@@ -72,14 +104,20 @@ const nextState = [
                 <ul>
                     <li>Both Redux and React-Redux employ shallow equality checking</li>
                     <li>Immutable data management ultimately makes data handling safer.</li>
-                    <li>Time-travel debugging requires that reducers be pure functions with no side effects, so that you can correctly jump between different states.</li>
+                    <li>Time-travel debugging requires that reducers be pure functions with no side effects, so that you can
+                        correctly jump between different states.</li>
                 </ul>
             </section>
 
-            <section>Some functional programming concepts</section>
-            <section>Pure function &amp; Side effect</section>
             <section>
-                <div>Where to put code of logic?</div> 
+                <div>Pure function:</div>
+                <ul>
+                    <li>$ Y = F(X): \forall X, \exists! Y $</li>
+                    <li>No side effect (no mutate state of outside scope)</li>
+                </ul>
+            </section>
+            <section>
+                <div>Where to put code of logic?</div>
                 <div>React Component/action/reducer ?</div>
             </section>
             <section>
