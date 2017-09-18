@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>React Redux Notes</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/beige.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style>
+        img {
+            border: none!important;
+            box-shadow: none!important
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <div><img src="img/state-ui.png" /></div>
+                <a href="https://github.com/reactjs/react-basic#transformation">"The core premise for React is that UIs are simply a projection of data into a different form of data. The same input gives the same output. A simple pure function."</a>
+            </section>
+            <section>React Devtools, Redux Remote Devtools</section>
+            <section>
+                Immutable:
+                <pre><code>
+const state = [
+  {value: 1, name: 'A'}, 
+  {value: 2, name: 'B'}
+]
+
+//add new:
+const nextState = [
+  ...state, 
+  {value: 3, name: 'C'}
+]
+
+//edit element at i:
+const nextState = [
+  ...state.slice(0, i), 
+  {
+    ...state[i],
+    name: 'New edited name'
+  }, 
+  ...state.slice(i+1)]
+
+//remove element at i:
+const nextState = [
+  ...state.slice(0, i), 
+  ...state.slice(i+1)
+]
+                    </code></pre>
+            </section>
+            <section>
+                <a href="http://redux.js.org/docs/faq/ImmutableData.html#why-is-immutability-required-by-redux">Why immutable?</a>
+                <ul>
+                    <li>Both Redux and React-Redux employ shallow equality checking</li>
+                    <li>Immutable data management ultimately makes data handling safer.</li>
+                    <li>Time-travel debugging requires that reducers be pure functions with no side effects, so that you can correctly jump between different states.</li>
+                </ul>
+            </section>
+
+            <section>Some functional programming concepts</section>
+            <section>Pure function &amp; Side effect</section>
+            <section>Where to put code of logic? React Component/action/reducer ?</section>
+            <section>Thank you for your time.</section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true,
+            math: {
+                mathjax: 'MathJax-2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                // find symbol here: http://detexify.kirelabs.org/classify.html
+            },
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/math/math.js', async: true }
+            ]
+        });
+    </script>
+</body>
+
+</html>
